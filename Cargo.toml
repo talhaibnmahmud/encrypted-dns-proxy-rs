@@ -1,0 +1,13 @@
+[package]
+name = "dns-proxy-test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+env_logger = "0.11.5"
+hickory-resolver = { version = "0.24.1", features = ["dns-over-https-rustls"] }
+log = "0.4.22"
+rustls = "0.21.12"
+serde = { version = "1.0.215", features = ["derive"] }
+tokio = { version = "1.41.1", features = ["macros"] }
+webpki-roots = "0.25.4"
